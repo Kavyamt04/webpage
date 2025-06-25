@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <style>
+    
+       .navbar{
+        width: 100%;
+        height: 60px;
+        display: flex;
+        justify-content: flex-end;
+        position: fixed;
+        z-index: 9999;
+        background-color: antiquewhite;
+        
+       }
+       .name{
+        position: absolute;
+        color: red;
+        right: 90%;
+       }
+       .me{
+        width: 100%;
+        height: 100vh;
+        position: relative;
+     }
+     .coset{
+        font-style: italic;
+        color: blue;
+        display: flex;
+         flex-direction: column;
+        justify-content: center;
+         align-items: center;
+         position: absolute;
+         z-index: 9999;
+         right: 550px;
+         bottom: 455px;
+     }
+     .coset:hover{
+        color: red;
+     }
+     .paragraph1{
+        display: flex;
+         flex-direction: column;
+        justify-content: center;
+         align-items: center;
+         color: rgb(239, 234, 234);
+         font-size: 125%;
+         position: absolute;
+         z-index: 9999;
+         right: 330px;
+         bottom: 400px;
+         
+     }
+     .lip{
+        color: rgb(245, 245, 248);
+        position: absolute;
+        top: 1000px;
+        left: 200px;
+        z-index: 999;
+         display: flex;
+         flex-direction: column;
+        justify-content: center;
+         align-items: center;
+     }
+
+     .lipstick img{
+        width: 100%;
+       height: fit-content;
+     }
+     .stick{
+        color: rgb(219, 247, 12);
+        font-style: italic;
+        font-size: 225%;
+     }
+     .hairs{
+        color: rgb(245, 245, 248);
+        position: absolute;
+        top: 1000px;
+        left: 200px;
+        z-index: 999;
+         display: flex;
+         flex-direction: column;
+        justify-content: center;
+         align-items: center;
+     }
+      .hair img{
+        width: 100%;
+        height: 100vh;
+     }
+     .paragraph2{
+          display: flex;
+         flex-direction: column;
+        justify-content: center;
+         align-items: center;
+         color: rgb(239, 234, 234);
+         font-size: 125%;
+         position: absolute;
+         z-index: 9999;
+         right: 330px;
+         bottom: 400px;
+     }
+       </style>
+</head>
+<body>
+    <div class="navbar"><h1 class="name">PurPle.</h1></div>
+    <div id="carouselExampleCaptions" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="/html/assets/cosmetics.webp" class="d-block w-100" alt="">
+      <div class="cos">
+        <h5 class="coset">WELCOME TO PURPLE</h5>
+        <p class="paragraph1">"The actress always had a flawless complexion due to her cosmetics regimen."</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="/html/assets/lipstick.jpg" class="d-block w-100" alt="">
+      <div class="lip">
+        <h5 class="stick">LIPSTICK</h5>
+        <p>Purple lipstick offers a bold and elegant look, with various shades and finishes available to suit all skin tones and occasions, ranging from vibrant purples to soft lavenders and deep plums."</p>
+      </div>
+    </div>
+    <div class="carousal-item2">
+      <img src="/html/assets/hair.webp" class="d-block w-100" alt="">
+      <div class="hair">
+        <h5 class="hairs">HAIR PRODUCT</h5>
+        <p >In this guide, we'll explore the best choices for various hair types and answer common questions about hair care. Before you do anything, understand your hair type. Whether you have oily, dry, curly, thin, thick, or combination hair, there are specific products designed to address your unique needs.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</body>
+</html>

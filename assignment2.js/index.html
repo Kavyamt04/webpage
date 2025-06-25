@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       *{
+        margin: 0%;
+        padding: 0%;
+       } 
+       .navbar{
+        width: 100%;
+        height: 60px;
+        display: flex;
+        justify-content: flex-end;
+        position: fixed;
+        z-index: 9999;
+        background-color: antiquewhite;
+     }
+     .list{
+        list-style: none;
+        width: 80%;
+        display: flex;
+        justify-content: space-evenly;
+        color: white;
+        align-items: center;
+     }
+     .name{
+        color: white;
+        display: flex;
+        align-items: center;
+     }
+     .home{
+        top: 60px;
+        width: 100%;
+        height: 600px;
+        position: relative;
+        display: flex;
+        color: white;
+        font-size: 40px;
+        background-color: rgb(226, 245, 108);
+        padding-bottom: 200px;
+     }
+     .me{
+        width: auto;
+        height: auto;
+        position: relative;
+     }
+     .heading2{
+        position: absolute;
+        left: 45%;
+        top: 40%;
+        display: flex;
+     }
+     .paragraph1{
+        font-size: 20px;
+        line-height: 2em;
+        position: absolute;
+        left: 45%;
+        top: 40%;
+        color: black;
+     }
+.career{
+             padding-top: 200px;
+        width: 100%;
+        height: 600px;
+        position: relative;
+        display: flex;
+        color: white;
+        font-size: 40px;
+        background-color: rgb(226, 245, 108);
+        font-size: 20px;
+        line-height: 2.5em;
+
+     }
+     .heading3{
+        font-size: 45px;
+        color: rgb(121, 4, 47) ;
+        font-style: italic ;
+        font-style: bold;
+        
+    
+
+     }.heading1:hover{
+        font-style: italic;
+        color: brown;
+
+    
+     }
+     .heading1{
+        color: rgb(240, 12, 12);
+     }
+     .li:hover{
+        color: black;
+     }
+     .list{
+        color: black;
+     }
+     .career1{
+        color: black;
+        
+     }
+     a{
+        text-decoration: none;
+     }
+        .aboutme{
+             padding-top: 200px;
+        width: 100%;
+        height: 600px;
+        position: relative;
+        display: flex;
+        color: black;
+        font-size: 40px;
+        background-color: rgb(226, 245, 108);
+        font-size: 20px;
+        line-height: 2.5em;
+     }
+     .heading4{
+      color: rgb(121, 4, 47);
+      font-style: italic;
+      font-size: 45px;
+     }
+     .heading5{
+      color: rgb(121, 4, 47);
+      font-style: italic;
+      font-size: 45px;
+   }
+   .contactme{
+             padding-top: 200px;
+        width: 100%;
+        height: 600px;
+        position: relative;
+        display: flex;
+        color: black;
+        font-size: 40px;
+        background-color: rgb(226, 245, 108);
+        font-size: 20px;
+        line-height: 2.5em;
+   }
+        .career{
+         display: flex;
+         flex-direction: column;
+        justify-content: center;
+         align-items: center;
+        }
+        .aboutme{
+         display: flex;
+         flex-direction: column;
+        justify-content: center;
+         align-items: center;
+        }
+        .contactme{
+         display: flex;
+         flex-direction: column;
+        justify-content: center;
+         align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="name"><h1 class="heading1">KAVYA M T</h1></div>
+        <ul class="list">
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#career2">CAREER</a></li>
+            <li><a href="#aboutme2">ABOUT ME</a></li>
+            <li><a href="#contactme2" >CONTACT ME</a></li>
+        </ul>
+    </div>
+    <div class="home" id="home"><img src="/html/assets/download.jpg" alt="" class="me"><h1 class="heading1"> My Journey</h1>
+    <p class="paragraph1">
+Hi , iam kavya. <br>
+A mern stack developer with complete knowledge about full stack in javascript.
+
+    </p>
+    </div>
+    <div class="career" id="career2">
+       <div class="heading3">Career</div>
+        <ul class="career1">
+           
+            <li>iam a mern stack developer with complete knowledge about full stack in javascript</li>
+            <li>iam a diploma graduator </li>
+            <li>i have knowledge in technical skills and i know tech languages such as: python,java,c++,c</li>
+            <li>my strengths are: iam self motivated , good listener, and a good learner also.</li>
+        </ul>
+    </div>
+    <div class="aboutme" id="aboutme2">
+      <div class="heading4">About Me</div>
+        <ul class="aboutme1">
+            
+            <li>responsible for designing,developing,and maintaining web applications using the MERN technology stack.</li>
+            <li>front-end and back-end development</li>
+            <li>working in a multi national company </li>
+        </ul>
+    </div>
+    <div class="contactme" id="contactme2">
+      <div class="heading5">Contact Me</div>
+      <ul class="contactme1">
+         <li>Email:kavya1456@gmail.com</li>
+         <li>phone:1234567890</li>
+         <li>address:abcd house kochi </li>
+      </ul>
+    </div>
+</body>
+</html>
