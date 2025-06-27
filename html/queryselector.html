@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document object model</title>
+</head>
+<body>
+    <h1 class="title" id="first">FIRST</h1><img src="/assignment2.js/assets/download.jpg" alt="" class="pic">
+    <h1 class="title" id="second">SECOND</h1><img src="/assignment2.js/assets/hd.jpg" alt="" class="pic">
+    <h1 class="title" id="third">THIRD</h1>
+    <h1></h1>
+    <script>
+        //...using query selector
+        const query1=document.querySelector(".title")
+        console.log(query1)
+
+        //...using querySelectorAll
+        const query2=document.querySelectorAll(".title")
+        console.log(query2)
+        query2.forEach(title=>console.log(title))
+
+        //...image accessing using query selector & quesrySelectorAll
+        const query3=document.querySelector(".pic")
+        console.log(query3)
+        const query4=document.querySelectorAll(".pic")
+        console.log(query4)
+        query4.forEach(pic=>console.log(pic))
+
+        //...manipulating attribute
+        const headings=document.querySelectorAll("h1")
+        headings[3].className="title"
+        headings[3].setAttribute("id","fourth")
+        headings[3].classList.add("title1")
+        headings[3].textContent="FOURTH"
+        console.log(headings)
+
+        //creating a tag
+        const para=document.createElement("p")
+        para.textContent="this is a element created by javascript"
+        para.style.color="green"
+        para.style.fontSize="25px"
+        document.body.appendChild(para)
+        const image=document.createElement("img")
+        image.src="./cosmetics.webp"
+        image.style.width="100px"
+        image.style.height="100px"
+        document.body.appendChild(image)
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <button>click me !</button> -->
+    <button onclick="handleclick()">click me !</button>
+    <script>
+        // const btn=document.querySelector('button')
+        // btn.addEventListener('dblclick',function(e){
+        //     const heading=document.createElement('h5')
+        //     const date=new Date()
+        //     heading.textContent=`the date is ${date}`
+        //     document.body.appendChild(heading)
+        // })
+        function handleclick(e){
+            const heading=document.createElement('h5')
+            const date=new Date()
+            heading.textContent=`the date is ${date}`
+            document.body.appendChild(heading)
+        }
+        
+    </script>
+</body>
+</html>
