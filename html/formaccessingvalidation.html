@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+     .container{
+        width: 60%;
+        height: 100%;
+        background-color: rgb(217, 188, 245);
+     }   
+     .f1{
+        font-style: italic;
+        color: rgb(243, 6, 6);
+        width: auto;
+        height: auto;
+
+     }
+
+     #name,#email,#password,#phone,#dob,#btn1{
+        border-radius: 35px;
+     }
+    form{
+        background-image: url('/assignment2.js/assets/hd.jpg');
+        background-repeat: no-repeat;
+    }
+    #btn1{
+        color: red;
+    }
+     
+    </style>
+</head>
+<body>
+    <div class="container">
+    <form class="f1">
+        <label for="">Enter Your Name:</label>
+        <p><input type="text" id="name" placeholder="Enter your name" required></p>
+        <label for="">Enter Your Email:</label>
+        <p><input type="email" id="email" placeholder="Enter your email" required></p>
+        <label for="">Enter Your Password</label>
+        <p><input type="password" id="password" placeholder="Enter your password" required></p>
+        <label for="">Enter your Mobilenumber</label>
+        <p><input type="number" id="phone" placeholder="Enter your phone number" required></p>
+        <label for="">Select Gender</label>
+        <p><input type="radio"id="male" name="gender" value="male">Male</p>
+        <p><input type="radio" id="female" name="gender" value="female">Female</p>
+        <p><input type="radio" id="others" name="gender" value="others">Others</p>
+        <p><label for="">Enter your date of birth : </label>
+        <input type="date" name="" id="dob"placeholder="Enter the DOB"></p>
+        <button type="submit" id="btn1">Register</button>
+    </form>
+    <script>
+        const form=document.querySelector('form')
+        form.addEventListener('submit',(e)=>{
+            e.preventDefault()
+            const name=document.getElementById("name").value
+            const email=document.getElementById("email").value
+            const password=document.getElementById("password").value
+            const phone=document.getElementById("phone").value
+            const gender=document.querySelectorAll('#male','#female','#others').value
+            const dob=document.getElementById("dob").value
+            user=document.createElement("h4")
+            user.innerHTML=`Name: ${name} <br> Email: ${email} <br> Phone: ${phone}<br> Date of Birth: ${dob}`
+                        document.body.appendChild(user)
+                })
+    </script>
+    
+    </div>
+</body>
+</html>

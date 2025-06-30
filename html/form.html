@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="fullname" placeholder="enter your fullname"  required>
+    <button>submit</button>
+
+    <script>
+        const btn=document.querySelector('button')
+        const fname=document.querySelector('#fullname')
+        btn.addEventListener('click',(e)=>{
+            const name=document.createElement('h4')
+            name.textContent=fname.value
+            document.body.appendChild(name)
+        })
+    </script>
+</body>
+</html>
